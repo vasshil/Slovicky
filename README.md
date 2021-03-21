@@ -54,7 +54,9 @@ Also, due to too much content, I had to create a new `Activity` for this.
 
 #### Import/Export groups
 
-In the app settings, there are 2 buttons for both importing and exporting a group of words. The group that is always selected at the moment is exported to the `Slovíčky` folder in the internal memory of the phone in the form `.zip` archive. To import words, a new `Activity` was also created with a file manager, where only the folders and `.zip` files are visible.
+In the app settings, there are 2 buttons for both importing and exporting a group of words. The group that is always selected at the moment is exported to the `Slovíčky` folder in the internal memory of the phone in the form `.zip` archive. To import words, a new `Activity` with a file manager was also created, where only the folders and `.zip` files are visible.
+
+![Image alt](https://github.com/vasshil/Slovicky/raw/master/screenshots/5.png)
 
 
 
