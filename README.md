@@ -25,6 +25,8 @@ Unfortunately, I haven't found a good way to delete a single `ViewPager` element
 
 If the user enters a correct or incorrect answer, the text input field changes its color to green or red, and also plays an animation. You can also just peek at the translation without entering anything.
 
+Also, in future updates, you will be able to voice the words.
+
 ![Image alt](https://github.com/vasshil/Slovicky/raw/master/screenshots/2.png)
 
 At the bottom of the screen there is a slider for easy scrolling of cards and also a button for shuffling words.
@@ -46,6 +48,13 @@ The time can be selected either at a certain interval or manually, so this metho
 
 Also, due to too much content, I had to create a new `Activity` for this.
 
+![Image alt](https://github.com/vasshil/Slovicky/raw/master/screenshots/4.png)
+
+
+
+#### Import/Export groups
+
+In the app settings, there are 2 buttons for both importing and exporting a group of words. The group that is always selected at the moment is exported to the `Slovíčky` folder in the internal memory of the phone in the form `.zip` archive. To import words, a new `Activity` was also created with a file manager, where only the folders and `.zip` files are visible.
 
 
 
