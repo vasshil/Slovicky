@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/learning_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/accent_background"
+    app:cardElevation="30dp"
+    app:cardCornerRadius="30dp">
+
+    <View
+        android:id="@+id/transparency"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/accent_background"
+        android:elevation="2dp"
+        android:alpha="0"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/learning_card_base_distance">
+
+        <FrameLayout
+            android:id="@+id/text_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="@dimen/learning_card_base_distance"
+            android:layout_marginBottom="@dimen/learning_card_base_distance"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/sound"
+            android:layout_above="@id/enter_translation">
+
+            <TextView
+                android:id="@+id/main_word"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:text="ГосподинббибииГосподинббибииГосподинббибии"
+                android:fontFamily="@font/rubik_bold"
+                android:gravity="center_horizontal|bottom"
+                android:textColor="@color/purple_700"
+                android:ellipsize="end"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="15sp"
+                app:autoSizeMaxTextSize="35sp"
+                app:autoSizeStepGranularity="1sp"/>
+
+            <TextView
+                android:id="@+id/translation"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginTop="95dp"
+                android:text="ГосподиинГГосподиинГГосподиинГ"
+                android:fontFamily="@font/rubik_medium"
+                android:gravity="top|center_horizontal"
+                android:textColor="@color/primary_transparent"
+                android:ellipsize="end"
+                android:alpha="0"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="15sp"
+                app:autoSizeMaxTextSize="35sp"
+                app:autoSizeStepGranularity="1sp"/>
+
+        </FrameLayout>
+
+
+        <ImageView
+            android:id="@+id/sound"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_sound"
+            android:background="@drawable/main_background"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:stateListAnimator="@animator/scale_animation"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/hide"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/learning_card_base_distance"
+            android:padding="10dp"
+            android:src="@drawable/ic_visibility"
+            android:background="@drawable/main_background"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/sound"
+            android:stateListAnimator="@animator/scale_animation"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/info"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:layout_marginTop="@dimen/learning_card_base_distance"
+            android:src="@drawable/ic_info"
+            android:background="@drawable/main_background"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/hide"
+            android:stateListAnimator="@animator/scale_animation"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/done"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:layout_marginTop="@dimen/learning_card_base_distance"
+            android:src="@drawable/ic_done"
+            android:background="@drawable/main_background"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/info"
+            android:stateListAnimator="@animator/scale_animation"
+            app:tint="@color/white" />
+
+        <EditText
+            android:id="@+id/enter_translation"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="@dimen/learning_card_base_distance"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:elevation="0dp"
+            android:textSize="22sp"
+            android:textAlignment="center"
+            android:fontFamily="@font/rubik_regular"
+            android:textColor="@color/white"
+            android:singleLine="true"
+            android:hint="@string/enter_translation_hint"
+            android:imeOptions="actionDone"
+            android:textColorHint="@color/hint_color"
+            android:background="@drawable/main_round_background"
+            android:backgroundTint="@color/purple_500"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@id/done"
+            android:layout_toStartOf="@id/done"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

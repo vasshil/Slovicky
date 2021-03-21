@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Slovíčky</string>
+    <string name="app_name_short">Sč</string>
+
+    <string name="title">Slovíčky</string>
+    <string name="cz_flag">u+1F1E8</string>
+    <string name="ru_flag">u+1F1F7</string>
+
+    <string name="enter_translation_hint">Překlad…</string>
+    <string name="swipe">swipe</string>
+    <string name="enter_group_name_hint">Název skupiny</string>
+    <string name="enter_cz_word_hint">Slovo</string>
+    <string name="enter_ru_word_hint">Překlad</string>
+
+    <string name="word">slovo</string>
+    <string name="words">slov</string>
+    <string name="group">skupina</string>
+    <string name="groups">skupin</string>
+
+
+    <string name="all_word_group_name">Všechna slova</string>
+    <string name="no_name_group_name">Žádné jméno</string>
+
+    <string name="no_word">Žádné slovo</string>
+    <string name="no_translation">Žádný překlad</string>
+
+
+    <string name="empty_group">Zatím žádná slova.</string>
+    <string name="add">Přidat!</string>
+
+
+    <string name="add_new_group">Nová skupina</string>
+    <string name="add_new_word">Nové slovo</string>
+
+    <string name="separator_text">nezobrazovat tato slova</string>
+
+
+    <string name="settings">Nastavení</string>
+    <string name="vibrations">Zapnout vibrace</string>
+    <string name="animations">Zapnout animace při odpovědi</string>
+    <string name="export_group">Export slov</string>
+    <string name="import_group">Import slov</string>
+    <string name="import_group_hint">Otevřít soubor</string>
+    <string name="theme_light">Světlé téma</string>
+    <string name="theme_dark">Tmavé téma</string>
+    <string name="theme_system">Systémové téma</string>
+    <string name="text_size">"Velikost písma slov: "</string>
+    <string name="notifications">Oznámení</string>
+    <string name="dont_show">Nezobrazovat</string>
+    <string name="send">Kdy</string>
+    <string name="from">Od</string>
+    <string name="to">Do</string>
+    <string name="every">Každých</string>
+    <string name="minutes">m.</string>
+    <string name="ok">PŘIDAT</string>
+    <string name="add_words">Přidat slova</string>
+    <string name="select_group">Vyberte skupinu:</string>
+    <string name="create_all_notifications">Vytvořit oznámení!</string>
+
+    <string name="notifications_group_name">Překlady slov</string>
+    <string name="notifications_group_description">Posílat náhodná slova s překladem</string>
+    <string name="notification_title">Nauč se nové slovo!</string>
+    <string name="notifications_created">Oznámení vytvořena!</string>
+    <string name="notifications_canceled">Oznámení zrušena!</string>
+    <string name="notification_action">Neposílat</string>
+
+    <string name="group_saved">Slova uložená do externí paměti</string>
+    <string name="open">otevřít</string>
+
+    <string name="permissions">Prosím, povolte přístup</string>
+    <string name="yes">Ano</string>
+    <string name="no">Ne</string>
+
+    <string name="in_future_update">Objeví se v budoucí aktualizaci</string>
+
+    <string-array name="app_themes">
+        <item>Světlé téma</item>
+        <item>Tmavé téma</item>
+        <item>Systémové téma</item>
+    </string-array>
+
+
+    <string name="startFolderName">Vyberte soubor</string>
+    <string name="empty_folder">Prázdná složka</string>
+    <string name="file_selected">Soubor vybrán!</string>
+
+    <string name="byte_size">B</string>
+    <string name="kilobyte_size">kB</string>
+    <string name="megabyte_size">MB</string>
+    <string name="gigabyte_size">GB</string>
+
+
+
+
+    <string name="click_on_me">Přidejme naše první slovo!\nZmáčkni mě 😉</string>
+    <string name="add_first_word">Zde je možné to udělat 🦄</string>
+    <string name="mix_words">Klepnutím míchejte slova 👍</string>
+    <string name="change_language">A zde můžete změnit jazyk 🙌</string>
+    <string name="settings_tip">Zde jsou nastavení aplikace 👽</string>
+    <string name="notifications_tip">Přidat oznámení pro denní odeslání 🧠</string>
+    <string name="setup_time">Zde můžete nastavit interval pro odeslání ⏰</string>
+    <string name="delete_time">Držte dlouho, abyste v této době neposílali 🙅‍♂️</string>
+    <string name="add_words_to_send">Vyberte si, která slova poslat 🍇</string>
+    <string name="create_all_notifications_tip">A nakonec vytvořte všechna oznámení 🥳\nPojďme začněme! 🎉</string>
+
+</resources>

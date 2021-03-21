@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:paddingTop="13dp"
+    android:paddingBottom="13dp"
+    android:background="@color/bottom_sheet_background"
+    android:text="@string/theme_dark"
+    android:gravity="left"
+    android:textColor="@color/purple_500"
+    android:fontFamily="@font/rubik_medium"
+    android:foreground="?attr/selectableItemBackgroundBorderless"/>

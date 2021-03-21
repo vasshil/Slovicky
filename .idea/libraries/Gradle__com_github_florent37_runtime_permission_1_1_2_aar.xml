@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.florent37:runtime-permission:1.1.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1ed330338b3d5d43c3ccef51effdf6df/jetified-runtime-permission-1.1.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1ed330338b3d5d43c3ccef51effdf6df/jetified-runtime-permission-1.1.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1ed330338b3d5d43c3ccef51effdf6df/jetified-runtime-permission-1.1.2/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.florent37/runtime-permission/1.1.2/f5bbbe38b5d89322efa4ab8434198c7366c1ca0e/runtime-permission-1.1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/notification_content_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    android:background="@drawable/bottom_sheet_drawable"
+    android:backgroundTint="@color/bottom_sheet_background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:id="@+id/picker"
+        android:layout_width="37dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="2dp"
+        android:backgroundTint="@color/teal_200"
+        android:background="@drawable/bottom_sheet_drag_pick"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="0dp"
+        android:text="@string/add_words"
+        android:fontFamily="@font/rubik_regular"
+        android:textColor="@color/purple_500"
+        android:textSize="20sp"
+        android:layout_below="@id/picker"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView
+        android:id="@+id/select_group_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:layout_marginStart="20dp"
+        android:text="@string/select_group"
+        android:textSize="12sp"
+        android:fontFamily="@font/rubik_regular"
+        android:textColor="@color/purple_500"
+        android:layout_below="@id/title"
+        android:layout_alignParentStart="true"/>
+
+
+    <Spinner
+        android:id="@+id/select_group_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_below="@id/title"
+        android:layout_toEndOf="@id/select_group_text"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/words_to_add"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="0dp"
+        android:layout_below="@+id/select_group_text"
+        android:layout_above="@+id/add_words"/>
+
+<!--    <com.google.android.material.button.MaterialButton-->
+<!--        android:id="@+id/add_words"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        android:text="@string/add_words"-->
+<!--        app:icon="@drawable/ic_add"-->
+<!--        app:cornerRadius="50dp"-->
+<!--        android:layout_alignParentBottom="true"/>-->
+
+    <ImageView
+        android:id="@+id/add_words"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_add"
+        app:tint="@color/white"
+        android:backgroundTint="@color/purple_500"
+        android:background="@drawable/rounded_background"
+        android:stateListAnimator="@animator/scale_animation" />
+
+    <ImageView
+        android:id="@+id/select_all_words"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/add_words"
+        android:src="@drawable/ic_select_all"
+        android:backgroundTint="@color/purple_500"
+        android:background="@drawable/rounded_background"
+        android:stateListAnimator="@animator/scale_animation" />
+
+    <ImageView
+        android:id="@+id/unselect_all_words"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/select_all_words"
+        android:src="@drawable/ic_unselect_all"
+        android:backgroundTint="@color/purple_500"
+        android:background="@drawable/rounded_background"
+        android:stateListAnimator="@animator/scale_animation" />
+
+
+    <!--    <com.google.android.material.button.MaterialButton-->
+<!--        android:id="@+id/select_all_words"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="0dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        app:icon="@drawable/ic_select_all"-->
+<!--        android:text="@string/select_all_button"-->
+<!--        app:cornerRadius="50dp"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_toEndOf="@+id/add_words"/>-->
+
+<!--    <com.google.android.material.button.MaterialButton-->
+<!--        android:id="@+id/unselect_all_words"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="0dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        app:icon="@drawable/ic_unselect_all"-->
+<!--        android:text="@string/select_all_button"-->
+<!--        app:cornerRadius="50dp"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_toEndOf="@+id/select_all_words"/>-->
+
+
+
+</RelativeLayout>

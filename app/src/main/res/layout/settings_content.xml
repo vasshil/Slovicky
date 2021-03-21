@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/settings_content_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_sheet_drawable"
+    android:backgroundTint="@color/bottom_sheet_background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:id="@+id/picker"
+        android:layout_width="37dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="2dp"
+        android:backgroundTint="@color/teal_200"
+        android:background="@drawable/bottom_sheet_drag_pick"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="@string/settings"
+        android:fontFamily="@font/rubik_regular"
+        android:textColor="@color/purple_500"
+        android:textSize="20sp"
+        android:layout_below="@id/picker"
+        android:layout_centerHorizontal="true"/>
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/vibrations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/vibrations"
+        android:textSize="15sp"
+        android:fontFamily="@font/rubik_medium"
+        android:textColor="@color/purple_500"
+        android:layout_below="@id/settings"
+        app:thumbTint="@color/purple_500"
+        app:trackTint="@color/purple_200"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground"/>
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/animations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/animations"
+        android:textSize="15sp"
+        android:fontFamily="@font/rubik_medium"
+        android:textColor="@color/purple_500"
+        android:layout_below="@id/vibrations"
+        app:thumbTint="@color/purple_500"
+        app:trackTint="@color/purple_200"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground"/>
+
+
+    <View
+        android:id="@+id/separator_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/separator_color"
+        android:layout_below="@id/animations"/>
+
+    <Spinner
+        android:id="@+id/select_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/purple_500"
+        android:fontFamily="@font/rubik_medium"
+        android:layout_alignTop="@id/notifications"
+        android:layout_alignBottom="@id/notifications"
+        android:entries="@array/app_themes"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add"
+        app:tint="@color/purple_500"
+        android:layout_alignTop="@id/notifications"
+        android:layout_alignBottom="@id/notifications"
+        android:layout_toStartOf="@id/notifications"/>
+
+    <TextView
+        android:id="@+id/notifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="0dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:text="@string/notifications"
+        android:textSize="15sp"
+        android:fontFamily="@font/rubik_medium"
+        android:textColor="@color/purple_500"
+        android:layout_below="@id/separator_1"
+        android:layout_alignParentEnd="true"
+        android:stateListAnimator="@animator/scale_animation"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackgroundBorderless"/>
+
+
+    <View
+        android:id="@+id/separator_2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/separator_color"
+        android:layout_below="@id/notifications"/>
+
+    <TextView
+        android:id="@+id/text_size_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/separator_2"
+        android:text="@string/text_size"
+        android:textColor="@color/purple_500"
+        android:fontFamily="@font/rubik_regular"
+        android:visibility="gone"/>
+
+    <SeekBar
+        android:id="@+id/font_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/separator_2"
+        android:layout_toEndOf="@id/text_size_label"
+        android:max="38"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/separator_3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/separator_color"
+        android:layout_below="@id/font_size"
+        android:visibility="gone"/>
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/separator_3">
+        
+        <androidx.cardview.widget.CardView
+            android:id="@+id/import_group"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:stateListAnimator="@animator/scale_animation"
+            app:cardCornerRadius="19dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="@color/separator_color">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackgroundBorderless">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_archive"
+                    app:tint="@color/purple_500"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/import_group"
+                    android:textAlignment="center"
+                    android:textSize="17sp"
+                    android:textColor="@color/purple_500"
+                    android:fontFamily="@font/rubik_regular"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/import_group_hint"
+                    android:textColor="@color/purple_500"
+                    android:fontFamily="@font/rubik_medium"
+                    android:singleLine="true"
+                    android:ellipsize="end"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/export_group"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:stateListAnimator="@animator/scale_animation"
+            app:cardCornerRadius="19dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="@color/separator_color">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackgroundBorderless">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_unarchive"
+                    app:tint="@color/purple_500"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/export_group"
+                    android:textAlignment="center"
+                    android:textSize="17sp"
+                    android:textColor="@color/purple_500"
+                    android:fontFamily="@font/rubik_regular"/>
+
+                <TextView
+                    android:id="@+id/group_export_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/import_group_hint"
+                    android:textColor="@color/purple_500"
+                    android:fontFamily="@font/rubik_medium"
+                    android:singleLine="true"
+                    android:ellipsize="end"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</RelativeLayout>

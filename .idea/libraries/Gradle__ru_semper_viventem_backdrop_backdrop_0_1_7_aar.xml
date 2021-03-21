@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: ru.semper-viventem.backdrop:backdrop:0.1.7@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fec92f3f190b4f54744d08b8df34a53c/jetified-backdrop-0.1.7/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fec92f3f190b4f54744d08b8df34a53c/jetified-backdrop-0.1.7/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fec92f3f190b4f54744d08b8df34a53c/jetified-backdrop-0.1.7/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ru.semper-viventem.backdrop/backdrop/0.1.7/522d6defd6a36b5f33fbe964c0d8e5df17e793fb/backdrop-0.1.7-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ru.semper-viventem.backdrop/backdrop/0.1.7/16c3aa559349fd3af89bfdf0729dce839d555233/backdrop-0.1.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

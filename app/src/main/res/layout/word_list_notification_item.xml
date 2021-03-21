@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="?attr/selectableItemBackground">
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/need_to_send"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:padding="0dp"
+        app:buttonTint="@color/white"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/words_with_translation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="35dp"
+        android:layout_marginStart="18dp"
+        android:fontFamily="@font/rubik_regular"
+        android:text="Slovo - словоSlovo - словоSlovo - словоSlovo - слово"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/need_to_send"/>
+
+    <ImageView
+        android:id="@+id/delete_word"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:padding="5dp"
+        android:src="@drawable/ic_close"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        app:tint="@color/white"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackgroundBorderless"/>
+
+</RelativeLayout>

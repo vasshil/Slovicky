@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/purple_500"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotificationsActivity"
+    android:animateLayoutChanges="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/button_close"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="5dp"
+                android:padding="12dp"
+                android:src="@drawable/ic_close"
+                android:background="?selectableItemBackgroundBorderless"
+                android:layout_alignParentEnd="true"/>
+
+            <TextView
+                android:id="@+id/notifications"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/notifications"
+                android:fontFamily="@font/rubik_regular"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"/>
+
+
+
+            <TextView
+                android:id="@+id/from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="35dp"
+                android:text="@string/from"
+                android:fontFamily="@font/rubik_regular"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_below="@id/notifications"/>
+
+            <TextView
+                android:id="@+id/from_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="13dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/transparent_background"
+                android:text="7:00"
+                android:fontFamily="@font/rubik_regular"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_toEndOf="@id/from"
+                android:layout_below="@id/notifications"
+                android:stateListAnimator="@animator/scale_animation"/>
+
+            <TextView
+                android:id="@+id/to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/to"
+                android:fontFamily="@font/rubik_regular"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_toEndOf="@id/from_time"
+                android:layout_below="@id/notifications"/>
+
+            <TextView
+                android:id="@+id/to_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="13dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/transparent_background"
+                android:text="23:00"
+                android:fontFamily="@font/rubik_regular"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_toEndOf="@id/to"
+                android:layout_below="@id/notifications"
+                android:stateListAnimator="@animator/scale_animation"/>
+
+            <TextView
+                android:id="@+id/every"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/every"
+                android:fontFamily="@font/rubik_regular"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_toEndOf="@id/to_time"
+                android:layout_below="@id/notifications"/>
+
+            <TextView
+                android:id="@+id/every_minutes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="13dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/transparent_background"
+                android:text="60"
+                android:fontFamily="@font/rubik_regular"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_toEndOf="@id/every"
+                android:layout_below="@id/notifications"
+                android:stateListAnimator="@animator/scale_animation"/>
+
+            <TextView
+                android:id="@+id/minutes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="7dp"
+                android:text="@string/minutes"
+                android:fontFamily="@font/rubik_regular"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_below="@id/notifications"
+                android:layout_toEndOf="@id/every_minutes"/>
+
+
+            <View
+                android:id="@+id/separator_2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/transparent_background"
+                android:layout_below="@id/from_time"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/times_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="33dp"
+                android:layout_below="@id/separator_2"/>
+
+            <View
+                android:id="@+id/separator_1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/transparent_background"
+                android:layout_below="@id/times_recycler_view"/>
+
+
+            <ImageView
+                android:id="@+id/create_notifications"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginBottom="15dp"
+                android:padding="10dp"
+                android:layout_below="@id/separator_1"
+                android:src="@drawable/ic_add_notifications"
+                android:background="@drawable/transparent_background"
+                android:stateListAnimator="@animator/scale_animation"
+                tools:ignore="UnusedAttribute" />
+
+            <ImageView
+                android:id="@+id/delete_all_notifications"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="15dp"
+                android:padding="10dp"
+                android:layout_below="@id/separator_1"
+                android:layout_toEndOf="@+id/create_notifications"
+                android:src="@drawable/ic_delete_notifications"
+                android:background="@drawable/transparent_background"
+                android:stateListAnimator="@animator/scale_animation"
+                tools:ignore="UnusedAttribute" />
+
+            <ImageView
+                android:id="@+id/select_all_words"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="15dp"
+                android:padding="10dp"
+                android:layout_below="@id/separator_1"
+                android:layout_toEndOf="@id/delete_all_notifications"
+                android:src="@drawable/ic_select_all"
+                android:background="@drawable/transparent_background"
+                android:stateListAnimator="@animator/scale_animation"
+                tools:ignore="UnusedAttribute" />
+
+            <ImageView
+                android:id="@+id/unselect_all_words"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="15dp"
+                android:padding="10dp"
+                android:layout_below="@id/separator_1"
+                android:layout_toEndOf="@id/select_all_words"
+                android:src="@drawable/ic_unselect_all"
+                android:background="@drawable/transparent_background"
+                android:stateListAnimator="@animator/scale_animation"
+                tools:ignore="UnusedAttribute" />
+
+            <ImageView
+                android:id="@+id/delete_all_words"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="15dp"
+                android:padding="10dp"
+                android:layout_below="@id/separator_1"
+                android:layout_toEndOf="@id/unselect_all_words"
+                android:src="@drawable/ic_delete"
+                android:background="@drawable/transparent_background"
+                android:stateListAnimator="@animator/scale_animation"
+                tools:ignore="UnusedAttribute" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/notifications_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/transparent_background"
+                android:layout_below="@id/delete_all_notifications"
+                android:animateLayoutChanges="true">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="20dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="20dp">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/words_list_notification_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"/>
+
+                    <LinearLayout
+                        android:id="@+id/add_notification_words"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:paddingStart="14dp"
+                        android:paddingEnd="20dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:background="?attr/selectableItemBackgroundBorderless">
+
+                        <ImageView
+                            android:id="@+id/add_icon"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginStart="0dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_add"
+                            app:tint="@color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_gravity="center_vertical"
+                            android:fontFamily="@font/rubik_regular"
+                            android:textAllCaps="true"
+                            android:maxLines="2"
+                            android:ellipsize="end"
+                            android:text="@string/add_new_word"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+<!--            <com.google.android.material.button.MaterialButton-->
+<!--                android:id="@+id/create_all_notifications"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="20dp"-->
+<!--                android:layout_below="@+id/notifications_card"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:text="@string/create_all_notifications"-->
+<!--                android:textColor="@color/purple_500"-->
+<!--                app:cornerRadius="50dp"-->
+<!--                app:backgroundTint="@color/accent_background"/>-->
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

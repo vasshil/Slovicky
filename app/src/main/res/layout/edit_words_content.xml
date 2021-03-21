@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/edit_words_content_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:background="@drawable/bottom_sheet_drawable"
+    android:backgroundTint="@color/bottom_sheet_background"
+    android:animateLayoutChanges="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <View
+        android:id="@+id/picker"
+        android:layout_width="37dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/bottom_sheet_drag_pick"
+        android:backgroundTint="@color/teal_200"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/group_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/main_transparent_background"
+        android:fontFamily="@font/rubik_medium"
+        android:textAlignment="center"
+        android:textColor="@color/purple_500"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:hint="@string/enter_group_name_hint"
+        android:textColorHint="@color/drag_pick_color"
+        android:layout_below="@id/picker"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/words_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="11 words"
+        android:fontFamily="@font/rubik_regular"
+        android:textColor="@color/purple_500"
+        android:layout_below="@id/group_name"
+        android:layout_centerHorizontal="true" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/edit_words_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:clipToPadding="false"
+        android:layout_below="@id/words_count"/>
+
+</RelativeLayout>
+

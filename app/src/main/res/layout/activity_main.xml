@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:id="@+id/main_context_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/root_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:background="@color/purple_500"
+            android:alpha="0">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="@string/title"
+                android:fontFamily="@font/rubik_light"
+                android:textSize="64sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_above="@id/select_group_container"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/select_group_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="10dp"
+                android:stateListAnimator="@animator/scale_animation"
+                android:layout_alignStart="@id/title"
+                android:layout_alignBottom="@id/change_language">
+
+                <TextView
+                    android:id="@+id/select_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="group"
+                    android:maxLength="30"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/rubik_medium"
+                    android:textSize="20sp"
+                    android:textColor="@color/light_white"
+                    android:textStyle="bold"
+                    android:singleLine="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginStart="5dp"
+                    android:src="@drawable/ic_arrow_down"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/settings"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:src="@drawable/ic_settings"
+                android:background="@drawable/transparent_background"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:stateListAnimator="@animator/scale_animation"/>
+
+            <ImageView
+                android:id="@+id/edit"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:src="@drawable/ic_edit"
+                android:background="@drawable/transparent_background"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/settings"
+                android:stateListAnimator="@animator/scale_animation"/>
+
+            <TextView
+                android:id="@+id/change_language"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/cz_flag"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:background="@drawable/transparent_background"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/edit"
+                android:stateListAnimator="@animator/scale_animation"/>
+
+
+            <FrameLayout
+                android:id="@+id/main_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/change_language"
+                android:layout_above="@id/swiper">
+
+                <com.antonyt.infiniteviewpager.InfiniteViewPager
+                    android:id="@+id/view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="335dp"
+                    android:paddingStart="@dimen/view_pager_margin"
+                    android:paddingEnd="@dimen/view_pager_margin"
+                    android:layout_gravity="center"
+                    android:clipToPadding="false"
+                    android:alpha="1"/>
+
+                <TextView
+                    android:id="@+id/empty_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:stateListAnimator="@animator/scale_animation"
+                    android:layout_gravity="center"
+                    android:text="@string/empty_group"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/rubik_light"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"/>
+
+            </FrameLayout>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/swiper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:text="@string/swipe"
+                android:fontFamily="@font/rubik_medium"
+                android:textColor="@color/purple_500"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                app:cornerRadius="50dp"
+                app:backgroundTint="@color/accent_background"/>
+
+            <ImageView
+                android:id="@+id/mix_words"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginEnd="20dp"
+                android:padding="10dp"
+                android:src="@drawable/ic_shuffle"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/rounded_background"
+                android:backgroundTint="@color/accent_background"
+                app:tint="@color/purple_500"
+                android:stateListAnimator="@animator/scale_animation"/>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</layout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bottom_sheet_background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/add_new_word"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="20dp"
+        android:background="?attr/selectableItemBackground"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_add"
+            app:tint="@color/purple_500"/>
+
+        <TextView
+            android:id="@+id/add_new_word_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_gravity="center_vertical"
+            android:text="@string/add_new_word"
+            android:fontFamily="@font/rubik_regular"
+            android:textAllCaps="true"
+            android:textColor="@color/purple_500"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/line_separator"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/purple_500"
+            android:elevation="0dp"/>
+
+        <TextView
+            android:id="@+id/separator_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:background="@color/bottom_sheet_background"
+            android:elevation="0dp"
+            android:text="don't show this items"
+            android:fontFamily="@font/rubik_medium"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="@color/purple_500"/>
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/select_group_item_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bottom_sheet_background"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackgroundBorderless">
+
+    <ImageView
+        android:id="@+id/edit_group"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:padding="8dp"
+        android:background="@drawable/main_transparent_background"
+        android:src="@drawable/ic_edit"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        app:tint="@color/purple_500"/>
+
+    <TextView
+        android:id="@+id/group_name_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="14dp"
+        android:paddingBottom="0dp"
+        android:text="Group"
+        android:fontFamily="@font/rubik_medium"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="@color/purple_500"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@id/delete_group"
+        android:layout_toEndOf="@id/edit_group"/>
+
+    <TextView
+        android:id="@+id/words_count_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="14dp"
+        android:text="11 words"
+        android:fontFamily="@font/rubik_regular"
+        android:textSize="16sp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="@color/purple_500"
+        android:background="@color/bottom_sheet_background"
+        android:layout_below="@id/group_name_item"
+        android:layout_toEndOf="@id/edit_group"/>
+
+    <ImageView
+        android:id="@+id/delete_group"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="12dp"
+        android:padding="8dp"
+        android:src="@drawable/ic_close"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        app:tint="@color/purple_500"/>
+
+</RelativeLayout>

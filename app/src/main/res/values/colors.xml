@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#331F21D4</color>
+    <color name="purple_500">#1F21D4</color>
+
+    <color name="purple_700">#1F21D4</color>
+    <color name="primary_transparent">#991F21D4</color>
+    <color name="teal_200">#F6C7DC</color>
+
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_white">#CCFFFFFF</color>
+
+    <color name="green">#599175</color>
+    <color name="red">#D7616E</color>
+
+    <color name="edit_words_background">#F6C7DC</color>
+    <color name="accent_hint">#99F6C7DC</color>
+    <color name="highlight_color">#331F21D4</color>
+
+    <color name="bottom_sheet_background">#F5DEE9</color>
+    <color name="separator_color">#66F6C7DC</color>
+
+    <color name="transparent_background">#33FFFFFF</color>
+    <color name="accent_background">#F6C7DC</color>
+    <color name="accent_transparent_background">#33F6C7DC</color>
+    <color name="hint_color">#A6FFFFFF</color>
+
+    <color name="drag_pick_color">#991F21D4</color>
+    <color name="drag_pick_selected_color">#59000000</color>
+
+
+    <color name="snack_bar_action_color">#F6C7DC</color>
+
+    <color name="transparent">@android:color/transparent</color>
+</resources>

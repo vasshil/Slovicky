@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Slovíčky</string>
+    <string name="app_name_short">Sč</string>
+
+    <string name="title">Slovíčky</string>
+    <string name="cz_flag">u+1F1E8</string>
+    <string name="ru_flag">u+1F1F7</string>
+
+    <string name="enter_translation_hint">Перевод…</string>
+    <string name="swipe">свайп</string>
+    <string name="enter_group_name_hint">Название группы</string>
+    <string name="enter_cz_word_hint">Слово</string>
+    <string name="enter_ru_word_hint">Перевод</string>
+
+    <string name="word">слово</string>
+    <string name="words">слов</string>
+    <string name="group">группа</string>
+    <string name="groups">групп</string>
+
+
+    <string name="all_word_group_name">Все слова</string>
+    <string name="no_name_group_name">Нет имени</string>
+
+    <string name="no_word">Нет слова</string>
+    <string name="no_translation">Нет перевода</string>
+
+
+    <string name="empty_group">Еще нет слов.</string>
+    <string name="add">Добавить!</string>
+
+
+    <string name="add_new_group">Новая группа</string>
+    <string name="add_new_word">Новое слово</string>
+
+    <string name="separator_text">не показывать эти слова</string>
+
+
+    <string name="settings">Настройки</string>
+    <string name="vibrations">Включить вибрации</string>
+    <string name="animations">Включить анимации при ответе</string>
+    <string name="export_group">Экспорт слов</string>
+    <string name="import_group">Импорт слов</string>
+    <string name="import_group_hint">Открыть файл</string>
+    <string name="theme_light">Светлая тема</string>
+    <string name="theme_dark">Темная тема</string>
+    <string name="theme_system">Системная тема</string>
+    <string name="text_size">"Размер слов: "</string>
+    <string name="notifications">Уведомления</string>
+    <string name="dont_show">Не показывать</string>
+    <string name="send">Когда</string>
+    <string name="from">От</string>
+    <string name="to">До</string>
+    <string name="every">Каждые</string>
+    <string name="minutes">м.</string>
+    <string name="ok">ДОБАВИТЬ</string>
+    <string name="add_words">Добавить слова</string>
+    <string name="select_group">Выберете группу:</string>
+    <string name="create_all_notifications">Создать уведомления!</string>
+
+    <string name="notifications_group_name">Переводы слов</string>
+    <string name="notifications_group_description">Присылать случайные слова с переводом</string>
+    <string name="notification_title">Выучи новое слово!</string>
+    <string name="notifications_created">Уведомления созданы!</string>
+    <string name="notifications_canceled">Уведомления отменены!</string>
+    <string name="notification_action">Не присылать</string>
+
+    <string name="group_saved">Слова сохранены во внешнюю память</string>
+    <string name="open">открыть</string>
+
+    <string name="permissions">Пожалуйста, разрешите доступ</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+
+    <string name="in_future_update">Появится в будущем обновлении</string>
+
+    <string-array name="app_themes">
+        <item>Светлая тема</item>
+        <item>Темная тема</item>
+        <item>Системная тема</item>
+    </string-array>
+
+
+    <string name="startFolderName">Выберите файл</string>
+    <string name="empty_folder">Пустая папка</string>
+    <string name="file_selected">Файл выбран!</string>
+
+    <string name="byte_size">Б</string>
+    <string name="kilobyte_size">КБ</string>
+    <string name="megabyte_size">МБ</string>
+    <string name="gigabyte_size">ГБ</string>
+
+
+
+
+    <string name="click_on_me">Давай добавим наше первое слово!\nНажми на меня 😉</string>
+    <string name="add_first_word">Здесь можно это сделать 🦄</string>
+    <string name="mix_words">Нажмите, чтобы перемешать слова 👍</string>
+    <string name="change_language">А здесь можно поменять язык 🙌</string>
+    <string name="settings_tip">Тут находятся настройки приложения 👽</string>
+    <string name="notifications_tip">Добавить уведомления для ежедневной отправки 🧠</string>
+    <string name="setup_time">Тут можно настроить интервал для отправки ⏰</string>
+    <string name="delete_time">Долго зажми, чтобы не присылать в это время 🙅‍♂️</string>
+    <string name="add_words_to_send">Выбери, какие слова отправлять 🍇</string>
+    <string name="create_all_notifications_tip">И, наконец, создай все уведомления 🥳\nДавай начнем! 🎉</string>
+
+</resources>
