@@ -115,10 +115,6 @@ public class MainActivity extends AppCompatActivity {
     static boolean showTooltips = true;
 
 
-
-
-
-
     @SuppressLint({"ClickableViewAccessibility", "SetTextI18n"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
