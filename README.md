@@ -58,17 +58,9 @@ In the app settings, there are 2 buttons for both importing and exporting a grou
 
 ![Image alt](https://github.com/vasshil/Slovicky/raw/master/screenshots/5.png)
 
-
-
-
-
-
-
-
-
-
-
+![Image alt](https://github.com/vasshil/Slovicky/raw/master/screenshots/6.png)
 
 
 ## Total:
-During the year of development, I got an incredible experience working on the project 👨🏻‍💻, I learned how to create my own applications completely from scratch and upload them to the Internet 🕸. Many of the similar applications on the Internet seemed to me rather nondescript and unattractive 😬, so during development I paid a lot of attention not only to the code itself, but also to the design, which would immediately draw the attention of a stranger to itself. 👨🏻‍🎨. As it seems to me, it turned out quite well, although even I will not be able to deal with that old code 😎. However, I took into account all the mistakes and did not repeat them in future projects 🥳
+
+As a result, I can say that I was able to achieve all the goals set before the creation, and even more of that! I am especially happy with the design and stability of the app. And most importantly, I have gained a lot of experience in working on it for several months.
