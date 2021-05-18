@@ -4,6 +4,9 @@
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c29be86e9d658a6f9c4ec4dd21ce933b/jetified-InfiniteViewPager-v1.0.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c29be86e9d658a6f9c4ec4dd21ce933b/jetified-InfiniteViewPager-v1.0.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c29be86e9d658a6f9c4ec4dd21ce933b/jetified-InfiniteViewPager-v1.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2fd8859ec99de6a87b1ec0c5288ddb74/jetified-InfiniteViewPager-v1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2fd8859ec99de6a87b1ec0c5288ddb74/jetified-InfiniteViewPager-v1.0.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2fd8859ec99de6a87b1ec0c5288ddb74/jetified-InfiniteViewPager-v1.0.0/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

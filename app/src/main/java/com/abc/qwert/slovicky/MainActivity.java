@@ -78,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
 
     static String appPath;
 
+
     ActivityMainBinding binding;
 
     RelativeLayout mainRelativeLayout;
